@@ -10,9 +10,15 @@
 	 #board {
 	  	width: 600px;
 	  	height: 600px;
-	  	display: inline-block;
-	  	
-	  	
+	  	display: inline-block;  	
+	  }
+	  h1 {
+	  	/*z-index: 1;
+	  	height: 900px;*/
+	  
+	  }
+	  #victor {
+	  /*	background-image: url(hypnotoad-animated.gif);*/
 
 	  }
 	 .topL {

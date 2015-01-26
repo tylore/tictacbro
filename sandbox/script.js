@@ -52,7 +52,7 @@ function userInput(click){
 	}
 	if(currentTurn>= 4){
 		// Program starts checking for winners.
-		var victory = "";
+		var victory = " ";
 		// placeholder for win message.
 			if(currentTurn%2==0){
 				// Checks to see who is the victor if true it is Player One (x).
@@ -66,12 +66,12 @@ function userInput(click){
 		  }
 		  if(playerWin){
 		  	// If there is a winner do the rest of this junk. 
-		  	var blowUp = getElemetsByClassName('box');
+		  	var blowUp = document.getElementsByClassName('box');
 		  	// Selects every div on the gameboard.
 
 		  	for(var v=0; v<blowUp.length; v++){
 		  		// Ends game and perhaps world.
-		  			blowUp[v].classList.add('spent');
+		  			blowUp[v].classList.add('spent','flipOutX');
 		  	}
 		    document.getElementById('victor').innerHTML = "<h1 id='victor'>" + victory + ' is victorious</h1>';
 		    // Displays winning player.
@@ -92,21 +92,28 @@ function userInput(click){
 
 // _________________________________________________________________________________
 
-function findWin(playerTurn){
+function findWin(currentTurn){
+	console.log("Searching for win");
 	// Win logic function
   var winState = false;
 	// variable that switiches win state on and off
 	var victoryVariables = [['1','2','3'],['4','5','6'],['7','8','9'],['3','6','9'],['2','5','8'],['1','4','7'], ['1','5','9'],['7','5','3']];
 	// An array of win conditions 
-	spentSearch = playerTurn + 'spent';
+	var spentSearch = currentTurn + ' spent';
 	// Collects all spent boxes into a string paired with which player selected them. 
+	console.log(currentTurn);
+	
 	
 	var playerSpent = document.getElementsByClassName(spentSearch);
 	// A win can only happen on a current players turn- this selects all the spaces that have been selected by that player. 
+	console.log(playerSpent);
 	var spentBoxes = [];	
 		for(var p=0; p < playerSpent.length; p++){
 			spentBoxes.push(playerSpent[p].id);
+		
 		}
+
+
 		// Pushes current players spent boxes into an array. 
 		for(var v=0;v<victoryVariables.length; v++){
 			  if((spentBoxes.indexOf(victoryVariables[v][0])!=-1)&&(spentBoxes.indexOf(victoryVariables[v][1])!= -1)&&(spentBoxes.indexOf(victoryVariables[v][2])!=-1)){
@@ -126,7 +133,7 @@ function cleanSlate(){
 			// Removes x's o's and spents.
 	}
 	currentTurn = 0;
-	winner=false;
+	winState=false;
 }
 function classExit(){
 	for(var i = 0;i<allBoxes;i++){
