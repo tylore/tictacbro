@@ -1,10 +1,18 @@
 
+	
+	#container {
+		width: 800px;
+		margin: 0 auto; 
+
+	}
+
+
 	 #board {
 	  	width: 600px;
 	  	height: 600px;
 	  	display: inline-block;
-	  	margin-left: 50%;
-	  	margin-right: 50%;
+	  	
+	  	
 
 	  }
 	 .topL {
@@ -88,15 +96,18 @@
 	  	display: inline-block;
 	  	-webkit-box-sizing: border-box; 
 	  }
-	  .spent { 
-	  	color: rgba(204,204,204,1);
-	  }
+	 
+
 	  .x {
-	  	font-family: 'Raleway', sans-serif;
-	  	color: black;
+	  	background-color: green;
 
 	  }
 	  .o {
-	  	font-family: 'Raleway', sans-serif;
-	  	color: black;
+	  	background-color: black;
+	  }
+	  .blank{
+	  	
+	  }
+	  .select{
+	  	background-color: blue;
 	  }
