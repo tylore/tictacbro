@@ -78,7 +78,7 @@ function userInput(click){
 		  }
 		  if(currentTurn==8 && !playerWin){
 		  	// checks for a bowtie because they are cool.
-		  	document.getElementById('victor').innerHTML = "<h1 id='victor'>" +'All are victorious in the eyes of the Hypnotoad</h1>';
+		  	document.getElementById('toad').innerHTML = "<h1 id='toad'>" +'All are victorious in the eyes of the Hypnotoad</h1>';
 		  	// Displays the tie message
 		    sisyphus();
 		    // Play again function

@@ -4,6 +4,7 @@
 		width: 800px;
 		margin: 0 auto; 
 
+
 	}
 
 
@@ -13,13 +14,20 @@
 	  	display: inline-block;  	
 	  }
 	  h1 {
-	  	/*z-index: 1;
-	  	height: 900px;*/
-	  
+	  	font-family: 'Roboto Condensed', sans-serif;
+	  	margin: 0 auto;
+	  	width: 400px;
+	  	
+
 	  }
 	  #victor {
-	  /*	background-image: url(hypnotoad-animated.gif);*/
+	  	
+	  	
 
+	  }
+	  #toad {
+	  	background-image: url(hypnotoad-animated.gif);
+	  	font-family: 'Roboto Condensed', sans-serif;
 	  }
 	 .topL {
 	  	border-right: 3px solid rgba(232, 148, 125, 1);
@@ -105,15 +113,19 @@
 	 
 
 	  .x {
-	  	background-color: green;
+	  	background-image: url(x.png);
 
 	  }
 	  .o {
-	  	background-color: black;
+	  	background-image: url(o.png);
 	  }
 	  .blank{
 	  	
 	  }
 	  .select{
-	  	background-color: blue;
+	  	background-color: rgba(204,204,204,.5);
+	  	border-top: 3px solid rgba(232, 148, 125, 1);
+	  	border-left: 3px solid rgba(232, 148, 125, 1);
+	  	border-right: 3px solid rgba(232, 148, 125, 1);
+	  	border-bottom:3px solid rgba(232, 148, 125, 1);
 	  }
