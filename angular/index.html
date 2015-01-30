@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="TicTacBro">
+<head>
+	<title>Tic Tac Bro</title>
+	<link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.11/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-control="TTTCrtl">
+   <div ng-repeat="row in board track by $index">
+                <div class="box" ng-repeat= "cell in row track by $index">
+                {{box == " "? "&nbsp;" : box}}
+
+
+</body>
+</html>
