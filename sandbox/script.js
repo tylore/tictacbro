@@ -99,7 +99,7 @@ function findWin(currentTurn){
 	// variable that switiches win state on and off
 	var victoryVariables = [['1','2','3'],['4','5','6'],['7','8','9'],['3','6','9'],['2','5','8'],['1','4','7'], ['1','5','9'],['7','5','3']];
 	// An array of win conditions 
-	var spentSearch = currentTurn + ' spent';
+	var spentSearch = currentTurn + 'spent';
 	// Collects all spent boxes into a string paired with which player selected them. 
 	console.log(currentTurn);
 	
