@@ -1,7 +1,9 @@
+
 #container { 
 	height: 600px;
 	width: 600px;
 	position: absolute;
+	margin-left: 0 auto;
 }
 
 .box { 
@@ -9,4 +11,24 @@
 	display: inline-block;
 	height:190px;
 	width: 190px;
+	padding: 1px;
+	padding-left: 2px;
+	padding-right: 2px;
+	position: relative;
+	left: 50%;
+	right: 50%;
+}
+.xChicken { 
+	background: url("x.png");
+	background-size: 190px, 190px;
+	background-repeat: no-repeat;
+	
+
+}
+
+.oChicken {
+	background: url("o.png");
+	background-size: 190px, 190px;
+	background-repeat: no-repeat;
+	
 }

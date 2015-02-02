@@ -10,22 +10,23 @@
  		<script src="app.js"></script>
 </head>
 <body ng-app="tickApp" ng-controller="TickCtrl">
-<h1>Welcome to Tic Tac Toe</h1>
-<div id="new" ng-click'newGame()'>
-    New Game
+<h2 id="victor" ng-show="victorMessageX"> X Wins! </h2>
+<h2 id="victor" ng-show="victorMessageO"> O Wins! </h2>
+<h2 id="victor" ng-show="victorMessageTie"> Firebase Chicken Defeats All Other Chickens Tie Game </h2>
+<div id="new" ng-click='tryAgain()'>
+    Reset
 </div>
 
 <div id="container">
         <div
-            ng-class="{box: true,
-                       xSelected: box.token == 'x',
-                       oSelected: box.token == 'o'}"
+            ng-class='{box: true,
+                       xChicken: box.token == "x",
+                       oChicken: box.token == "o"}'
             ng-repeat="box in board track by $index"
             ng-click="boxClick($index)"
-
-
-
         ></div>
+       
+
 </div>
     
 </body>
